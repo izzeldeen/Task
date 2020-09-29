@@ -1,0 +1,15 @@
+C:\Users\i.kalbuneh\source\repos\Task\DbContext\bin\Debug\netcoreapp3.1\DataAcces.deps.json
+C:\Users\i.kalbuneh\source\repos\Task\DbContext\bin\Debug\netcoreapp3.1\DataAcces.runtimeconfig.json
+C:\Users\i.kalbuneh\source\repos\Task\DbContext\bin\Debug\netcoreapp3.1\DataAcces.runtimeconfig.dev.json
+C:\Users\i.kalbuneh\source\repos\Task\DbContext\bin\Debug\netcoreapp3.1\DataAcces.dll
+C:\Users\i.kalbuneh\source\repos\Task\DbContext\bin\Debug\netcoreapp3.1\DataAcces.pdb
+C:\Users\i.kalbuneh\source\repos\Task\DbContext\bin\Debug\netcoreapp3.1\Domain.dll
+C:\Users\i.kalbuneh\source\repos\Task\DbContext\bin\Debug\netcoreapp3.1\Domain.pdb
+C:\Users\i.kalbuneh\source\repos\Task\DbContext\obj\Debug\netcoreapp3.1\DataAcces.csprojAssemblyReference.cache
+C:\Users\i.kalbuneh\source\repos\Task\DbContext\obj\Debug\netcoreapp3.1\DataAcces.AssemblyInfoInputs.cache
+C:\Users\i.kalbuneh\source\repos\Task\DbContext\obj\Debug\netcoreapp3.1\DataAcces.AssemblyInfo.cs
+C:\Users\i.kalbuneh\source\repos\Task\DbContext\obj\Debug\netcoreapp3.1\DataAcces.csproj.CoreCompileInputs.cache
+C:\Users\i.kalbuneh\source\repos\Task\DbContext\obj\Debug\netcoreapp3.1\DataAcces.csproj.CopyComplete
+C:\Users\i.kalbuneh\source\repos\Task\DbContext\obj\Debug\netcoreapp3.1\DataAcces.dll
+C:\Users\i.kalbuneh\source\repos\Task\DbContext\obj\Debug\netcoreapp3.1\DataAcces.pdb
+C:\Users\i.kalbuneh\source\repos\Task\DbContext\obj\Debug\netcoreapp3.1\DataAcces.genruntimeconfig.cache

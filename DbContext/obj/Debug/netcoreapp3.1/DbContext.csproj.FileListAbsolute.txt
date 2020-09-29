@@ -1,0 +1,5 @@
+C:\Users\i.kalbuneh\source\repos\Task\DbContext\bin\Debug\netcoreapp3.1\DbContext.deps.json
+C:\Users\i.kalbuneh\source\repos\Task\DbContext\bin\Debug\netcoreapp3.1\DbContext.dll
+C:\Users\i.kalbuneh\source\repos\Task\DbContext\obj\Debug\netcoreapp3.1\DbContext.csprojAssemblyReference.cache
+C:\Users\i.kalbuneh\source\repos\Task\DbContext\obj\Debug\netcoreapp3.1\DbContext.AssemblyInfoInputs.cache
+C:\Users\i.kalbuneh\source\repos\Task\DbContext\obj\Debug\netcoreapp3.1\DbContext.AssemblyInfo.cs

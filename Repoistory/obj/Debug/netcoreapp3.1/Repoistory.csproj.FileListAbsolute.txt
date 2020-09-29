@@ -1,0 +1,14 @@
+C:\Users\i.kalbuneh\source\repos\Task\Repoistory\bin\Debug\netcoreapp3.1\Repoistory.deps.json
+C:\Users\i.kalbuneh\source\repos\Task\Repoistory\bin\Debug\netcoreapp3.1\Repoistory.dll
+C:\Users\i.kalbuneh\source\repos\Task\Repoistory\bin\Debug\netcoreapp3.1\Repoistory.pdb
+C:\Users\i.kalbuneh\source\repos\Task\Repoistory\bin\Debug\netcoreapp3.1\DataAcces.dll
+C:\Users\i.kalbuneh\source\repos\Task\Repoistory\bin\Debug\netcoreapp3.1\Domain.dll
+C:\Users\i.kalbuneh\source\repos\Task\Repoistory\bin\Debug\netcoreapp3.1\DataAcces.pdb
+C:\Users\i.kalbuneh\source\repos\Task\Repoistory\bin\Debug\netcoreapp3.1\Domain.pdb
+C:\Users\i.kalbuneh\source\repos\Task\Repoistory\obj\Debug\netcoreapp3.1\Repoistory.csprojAssemblyReference.cache
+C:\Users\i.kalbuneh\source\repos\Task\Repoistory\obj\Debug\netcoreapp3.1\Repoistory.AssemblyInfoInputs.cache
+C:\Users\i.kalbuneh\source\repos\Task\Repoistory\obj\Debug\netcoreapp3.1\Repoistory.AssemblyInfo.cs
+C:\Users\i.kalbuneh\source\repos\Task\Repoistory\obj\Debug\netcoreapp3.1\Repoistory.csproj.CoreCompileInputs.cache
+C:\Users\i.kalbuneh\source\repos\Task\Repoistory\obj\Debug\netcoreapp3.1\Repoistory.csproj.CopyComplete
+C:\Users\i.kalbuneh\source\repos\Task\Repoistory\obj\Debug\netcoreapp3.1\Repoistory.dll
+C:\Users\i.kalbuneh\source\repos\Task\Repoistory\obj\Debug\netcoreapp3.1\Repoistory.pdb
