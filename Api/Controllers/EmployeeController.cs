@@ -21,20 +21,25 @@ namespace Api.Controllers
             _unitOfWork = unitOfWork;
         }
         [HttpPost("Criteria")]
-        public IActionResult GetEmployees(GetWithCrtiera model) => Ok(_unitOfWork.Employee.GetAll(filter: x => x.Salary > model.From && x.Salary < model.to || x.Name.Contains(model.Name)));
-        [HttpGet("getall")]
-        public IActionResult GetAll() => Ok(_unitOfWork.Employee.GetAll());
+        public IActionResult GetEmployees(GetWithCrtiera model) => Ok(_unitOfWork.EmployeeService.Value.GetAll(filter: x => x.Salary > model.From && x.Salary < model.to && x.Name.Contains(model.Name)));
+        [HttpGet("GetAll")]
+        public IActionResult GetAll() => Ok(_unitOfWork.EmployeeService.Value.GetAll());
         [HttpGet("getbyId")]
-        public IActionResult GetById(int Id) => Ok(_unitOfWork.Employee.get(Id));
+        public IActionResult GetById(int Id) => Ok(_unitOfWork.EmployeeService.Value.get(Id));
+
+        [HttpGet("Search")]
+        public IActionResult Search(string Name) =>
+            Ok(_unitOfWork.EmployeeService.Value.GetAll(filter:x=> x.Name.Contains(Name)));
+        
         [HttpPost("Add")]
         public IActionResult Add(Employee employee)
         {
-            _unitOfWork.Employee.Add(employee);
+            _unitOfWork.EmployeeService.Value.Add(employee);
             return Ok("done");
         }
         [HttpPost("Upsert")]
         public IActionResult Update(Employee employee) {
-            _unitOfWork.Employee.Update(employee);
+            _unitOfWork.EmployeeService.Value.Update(employee);
             return Ok("done");
         }
     } 

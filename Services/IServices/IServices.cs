@@ -8,6 +8,11 @@ namespace Services.IServices
 {
     public interface IServices<T> where T: class
     {
-       
+       // void asdfg(int id);
+        //Add
+        //Delete
+        //Update
+        //Get
+        //GetAll
     }
 }
