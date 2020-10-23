@@ -4,10 +4,11 @@ using System.Text;
 
 namespace Repoistory.IRepository
 {
-   public  interface IUnitOfWork : IDisposable
+   public  interface IUnitOfWork : IDisposable 
     {
          IEmployeeRepoistory Employee { get;  }
 
         void Save();
+       
     }
 }

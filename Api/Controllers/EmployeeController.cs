@@ -16,30 +16,31 @@ namespace Api.Controllers
     public class EmployeeController : ControllerBase
     {
         private readonly IUnitOfWorkServices _unitOfWork;
-        public EmployeeController(IUnitOfWorkServices unitOfWork)
+        private readonly IServices<Employee> _services;
+        public EmployeeController(IUnitOfWorkServices unitOfWork , IServices<Employee> services)
         {
             _unitOfWork = unitOfWork;
+            _services = services;
         }
-        [HttpPost("Criteria")]
-        public IActionResult GetEmployees(GetWithCrtiera model) => Ok(_unitOfWork.EmployeeService.Value.GetAll(filter: x => x.Salary > model.From && x.Salary < model.to && x.Name.Contains(model.Name)));
-        [HttpGet("GetAll")]
-        public IActionResult GetAll() => Ok(_unitOfWork.EmployeeService.Value.GetAll());
-        [HttpGet("getbyId")]
-        public IActionResult GetById(int Id) => Ok(_unitOfWork.EmployeeService.Value.get(Id));
-
-        [HttpGet("Search")]
-        public IActionResult Search(string Name) =>
-            Ok(_unitOfWork.EmployeeService.Value.GetAll(filter:x=> x.Name.Contains(Name)));
+        //[HttpPost("Criteria")]
+        //public IActionResult GetEmployees(GetWithCrtiera model) => Ok(_unitOfWork.EmployeeService.Value.GetAll(filter: x => x.Salary > model.From && x.Salary < model.to && x.Name.Contains(model.Name)));
+        //[HttpGet("GetAll")]
+        //public IActionResult GetAll() => Ok(_unitOfWork.EmployeeService.Value.GetAll());
+        //[HttpGet("getbyId")]
+        //public IActionResult GetById(int Id) => Ok(_unitOfWork.EmployeeService.Value.get(Id));
+        //[HttpGet("Search")]
+        //public IActionResult Search(string Name) =>
+        //    Ok(_unitOfWork.EmployeeService.Value.GetAll(filter:x=> x.Name.Contains(Name)));
         
-        [HttpPost("Add")]
-        public IActionResult Add(Employee employee)
+        [HttpGet("get")]
+        public IActionResult Add(int  Id)
         {
-            _unitOfWork.EmployeeService.Value.Add(employee);
-            return Ok("done");
+          return  Ok(_unitOfWork.EmployeeService.get(Id));
+           
         }
         [HttpPost("Upsert")]
         public IActionResult Update(Employee employee) {
-            _unitOfWork.EmployeeService.Value.Update(employee);
+            _unitOfWork.EmployeeService.Update(employee);
             return Ok("done");
         }
     } 

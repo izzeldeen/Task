@@ -1,4 +1,5 @@
 ﻿using DataAcces;
+using Domain;
 using Repoistory.IRepository;
 using Services.IServices;
 using System;
@@ -7,27 +8,32 @@ using System.Text;
 
 namespace Services.Services
 {
-    public class UnitOfWorkServices : IUnitOfWorkServices
+    public class UnitOfWorkServices : IUnitOfWorkServices 
     {
-        private readonly IUnitOfWork _unitOfWorkRepo;
-        public UnitOfWorkServices(IUnitOfWork unitOfWorkRepo)
+        private readonly IRepository<Employee> _unitOfWorkRepo;
+        private readonly StoreContext _context;
+
+        public UnitOfWorkServices(IRepository<Employee> unitOfWorkRepo , StoreContext context)
         {
             _unitOfWorkRepo = unitOfWorkRepo;
-            EmployeeService = new Lazy<IEmployeeServices>(() => (new EmployeeServices(_unitOfWorkRepo)));
-            //Employee = new EmployeeServices(_unitOfWorkRepo);
+            EmployeeService = new EmployeeServices(_unitOfWorkRepo);
+            _context = context;
+
         }
 
-        public Lazy<IEmployeeServices> EmployeeService { get ; set ; }
+        public IEmployeeServices EmployeeService { get;  set; }
         //public IEmployeeServices Employee { get; private set; }
 
         public void Dispose()
         {
-            _unitOfWorkRepo.Dispose();            
+            _context.Dispose();
         }
 
         public void Save()
         {
-            _unitOfWorkRepo.Save();
+            _context.SaveChanges();
         }
+
+       
     }
 }

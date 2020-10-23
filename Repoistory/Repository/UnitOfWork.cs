@@ -1,4 +1,5 @@
 ﻿using DataAcces;
+using Microsoft.EntityFrameworkCore;
 using Repoistory.IRepository;
 using System;
 using System.Collections.Generic;
@@ -28,5 +29,7 @@ namespace Repoistory.Repository
         {
             _context.SaveChanges();
         }
+
+     
     }
 }

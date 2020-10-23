@@ -44,6 +44,8 @@ namespace Api
             });
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddScoped<IUnitOfWorkServices , UnitOfWorkServices>();
+            services.AddScoped<IRepository<Employee>, Repoistory<Employee>>();
+            services.AddScoped<IServices<Employee>, Services<Employee>>();
             services.AddControllers();
         }
 

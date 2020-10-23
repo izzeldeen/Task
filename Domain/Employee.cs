@@ -8,11 +8,8 @@ namespace Domain
     {
         public int Id { get; set; }
         public string Name { get; set; }
-
         public DateTime BirthDay { get; set; }
-
         public decimal Salary { get; set; }
-
         public bool Gender { get; set; }
     }
 }

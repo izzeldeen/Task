@@ -1,0 +1,33 @@
+<div class="table-responsive table-padding">
+    <h2>Employees</h2>
+    <table class="table table-striped table-sm">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Name</th>
+          <th>Birthday</th>
+          <th>Salary</th>
+          <th>Gender</th>
+          <th>
+            Sort by price
+            <br>
+            <input type="range" min="0" max="10000" value="0" (input)="sortByPrice($event)"></th>
+          <th> 
+            <input type="text" placeholder="Search" #search (keyup.enter)="OnSearch($event)" class="form-control"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of employees" >
+          <td>{{item.id}}</td>
+          <td>{{item.name}}</td>
+          <td>{{item.birthDay | date}}</td>
+          <td>{{item.salary | currency}}</td>
+          <td>{{item.gender}}</td>
+          <td><a href="#" >View Details</a></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Total Salary : {{TotalSalary}}</h3>
+  
